@@ -1,17 +1,110 @@
 <!DOCTYPE html>
 <lang="en-ca">
-  <head>
-    <meta charset="utf-8">
-    <title>Volunteer form</title>
-    <meta name="viewport" content="width=device-width=initial-scale=1">
-    <link href="css/modules.css" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/type.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Volunteer form</title>
+  <meta name="viewport" content="width=device-width=initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
 
+  <form class="" method="POST">
+    <header>
+      <h1>Apply to be a tree planter</h1>
+      <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    </header>
 
+    <fieldset>
+      <legend>Personal details</legend>
+      <div class="grid">
+        <div class="unit">
+          <label for="name">Full Name<label>
+          <input id="name" name="name" required>
+          <p>Your full legal name, for insurance purposes, e.g. "Elizabeth Bradley".</p>
+        </div>
 
-  </body>
-  </html>
+        <div class="unit">
+          <label for="name">What should we call you?<label>
+          <input id="name" name="name" required>
+          <p>What all your friends call you, e.g. "Liz".</p>
+        </div>
+
+        <div class="unit">
+          <label for="date">Date of birth</label>
+          <input id="date" name="date" required>
+        </div>
+
+        <div class="unit">
+          <label for="subject">T-shirt size</label>
+          <select id="subject" name="_subject">
+            <option>Select a t-shirt size</option>
+            <option>Fitted: XS</option>
+            <option>Fitted: S</option>
+            <option>Fitted: M</option>
+            <option>Fitted: L</option>
+            <option>Fitted: XL</option>
+            <option>Straight-cut: XS</option>
+            <option>Straight-cut: S</option>
+            <option>Straight-cut: M</option>
+            <option>Straight-cut: L</option>
+            <option>Straight-cut: XL</option>
+          </select>
+        </div>
+
+        <div class="unit">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+
+        <div class="unit">
+          <label for="tel">Phone number</label>
+          <input id="tel" optional>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Address</legend>
+      <div class="grid">
+        <div class="unit">
+          <label for="message">Street address</label>
+          <textarea id="message"></textarea>
+        </div>
+
+      <div class="unit">
+        <label for="message">City</label>
+        <textarea id="message"></textarea>
+      </div>
+
+      <div class="unit">
+        <label for="subject">Province</label>
+        <select id="subject" name="_subject">
+          <option>Alberta</option>
+          <option>British Columbia</option>
+          <option>Manitoba</option>
+          <option>New Brunswick</option>
+          <option>Newfoundland & Labrador</option>
+          <option>Northwest Territories</option>
+          <option>Nova Scotia</option>
+          <option>Nunavut</option>
+          <option>Ontario</option>
+          <option>Prince Edward Island</option>
+          <option>Québec</option>
+          <option>Saskatchewan</option>
+          <option>Yukon</option>
+        </select>
+      </div>
+
+      <div class="unit">
+        <label for="message">Postal code</label>
+        <textarea id="message"></textarea>
+      </div>
+    </fieldset>
+
+    </fieldset>
+
+</body>
+</html>
